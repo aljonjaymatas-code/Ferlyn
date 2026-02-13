@@ -12,8 +12,9 @@ body{
     justify-content: center;
     min-height: 100vh;
     background-color: #000;
-    overflow: hidden;
+    overflow-y: auto;
     perspective: 1000px;
+    padding: 5vh 0;
 }
 
 .night {
@@ -739,8 +740,8 @@ body{
 }
 
 .love {
-    position: absolute;
-    top: 15%;
+    position: fixed;
+    top: 2vh;
     left: 50%;
     transform: translateX(-50%);
     color: #fff;
@@ -750,6 +751,7 @@ body{
     text-shadow: 0 0 1vmin rgba(255, 150, 200, 0.8), 0 0 2vmin rgba(255, 150, 200, 0.6);
     animation: love-pulse 2s ease-in-out infinite;
     z-index: 50;
+    pointer-events: none;
 }
 
 @keyframes love-pulse {
