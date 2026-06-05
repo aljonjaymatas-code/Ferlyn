@@ -11,7 +11,7 @@ body{
     align-items: flex-end;
     justify-content: center;
     min-height: 100vh;
-    background-color: #1692cb;
+    background-color: #110445;
     overflow: hidden;
     perspective: 1000px;
 }
@@ -168,7 +168,7 @@ body{
 .flower__leaf--4 {
     width: 10vmin; height: 8vmin;
     transform: translate(-50%, 18%) rotateX(60deg);
-    background-image: linear-gradient(to top, #b03a64, #ee5286);
+    background-image: linear-gradient(to top, #f1c5d5, #f2ff02);
     z-index: 1;
 }
 
@@ -745,7 +745,7 @@ body{
     transform: translateX(-50%);
     color: #fff;
     font-family: 'Arial', sans-serif;
-    font-size: 12px;
+    font-size: 20px;
     font-weight: bold;
     text-shadow: 0 0 1vmin rgba(255, 150, 200, 0.8), 0 0 2vmin rgba(255, 150, 200, 0.6);
     animation: love-pulse 1s ease-in-out infinite;
@@ -833,7 +833,7 @@ body{
 }
 
 /* Large tablets and landscape mode */
-@media (max-width: 1024px) {
+/* @media (max-width: 1024px) {
     .flowers {
         transform: scale(0.85);
     }
@@ -841,10 +841,10 @@ body{
     .love {
         font-size: 2.5vmin;
     }
-}
+} */
 
 /* Medium tablets and small devices */
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
     body {
         align-items: center;
     }
@@ -865,7 +865,7 @@ body{
     .flower__grass--2 {
         bottom: 8vmin;
     }
-}
+} */
 
 /* Mobile phones - Portrait & Landscape */
 @media (max-width: 600px) {
@@ -891,7 +891,7 @@ body{
     }
     
     .love {
-        font-size: 2vmin;
+        font-size: 8px;
         top: 5%;
     }
     
@@ -914,7 +914,7 @@ body{
 }
 
 /* Small phones - Under 480px */
-@media (max-width: 480px) {
+/* @media (max-width: 480px) {
     .flowers {
         transform: scale(0.5);
     }
@@ -950,10 +950,10 @@ body{
         width: 0.6vmin;
         height: 0.6vmin;
     }
-}
+} */
 
 /* Extra small devices - Under 360px */
-@media (max-width: 360px) {
+/* @media (max-width: 360px) {
     .flowers {
         transform: scale(0.45);
     }
@@ -965,10 +965,10 @@ body{
     .flower__grass {
         left: -3vmin;
     }
-}
+} */
 
 /* Landscape orientation optimizations */
-@media (max-height: 600px) and (orientation: landscape) {
+/* @media (max-height: 600px) and (orientation: landscape) {
     .flowers {
         transform: scale(0.5);
     }
@@ -993,7 +993,7 @@ body{
     .flower__grass {
         bottom: 6vmin;
     }
-}
+} */
 
 /* High DPI displays (Retina & similar) */
 @media (min-resolution: 2dppx) {
@@ -1020,12 +1020,12 @@ body{
     left: 50%;
     transform: translateX(-50%);
     
-    padding: 8px 16px; /* comfortable touch area */
-    font-size: 12px;   /* now readable */
-    font-weight: 500;
+    padding: 8px 18px; /* comfortable touch area */
+    font-size: 20px;   /* now readable */
+    font-weight: 300;
     color: white;
     background: linear-gradient(135deg, #ff4b7d, #ff8fab);
-    border-radius: 6px;
+    border-radius: 3px;
     text-decoration: none;
     transition: 0.3s;
     box-shadow: 0 4px 12px rgba(0,0,0,0.3);
