@@ -879,7 +879,7 @@ body{
     }
     
     .flower {
-        bottom: 5vmin;
+        bottom: 3vmin;
     }
     
     .flower--1 .flower__line {
@@ -914,7 +914,7 @@ body{
 }
 
 /* Small phones - Under 480px */
-/* @media (max-width: 480px) {
+@media (max-width: 480px) {
     .flowers {
         transform: scale(0.5);
     }
@@ -950,7 +950,7 @@ body{
         width: 0.6vmin;
         height: 0.6vmin;
     }
-} */
+}
 
 /* Extra small devices - Under 360px */
 /* @media (max-width: 360px) {
@@ -968,7 +968,7 @@ body{
 } */
 
 /* Landscape orientation optimizations */
-/* @media (max-height: 600px) and (orientation: landscape) {
+@media (max-height: 600px) and (orientation: landscape) {
     .flowers {
         transform: scale(0.5);
     }
@@ -976,6 +976,68 @@ body{
     .love {
         top: 8%;
         font-size: 1.8vmin;
+    }
+
+    .Button {
+        position: fixed;
+        bottom: 2rem;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 60;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        padding: 0 1rem;
+        pointer-events: none;
+    }
+
+    .pics-btn {
+        pointer-events: auto;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        min-width: 12rem;
+        max-width: 24rem;
+        width: min(100%, 18rem);
+        padding: 0.95rem 1.5rem;
+        font-family: 'Arial', sans-serif;
+        font-size: clamp(0.95rem, 1.5vw, 1.1rem);
+        font-weight: 700;
+        color: #fff;
+        text-decoration: none;
+        text-align: center;
+        border-radius: 999px;
+        background: linear-gradient(135deg, #ff7eb3 0%, #ff65a3 100%);
+        box-shadow: 0 0.9rem 1.6rem rgba(0, 0, 0, 0.2);
+        transition: transform 0.2s ease, box-shadow 0.2s ease, filter 0.2s ease;
+    }
+
+    .pics-btn:hover,
+    .pics-btn:focus-visible {
+        transform: translateY(-0.1rem);
+        box-shadow: 0 1.1rem 1.8rem rgba(0, 0, 0, 0.24);
+        filter: brightness(1.05);
+    }
+
+    @media (max-width: 768px) {
+        .Button {
+            bottom: 1.5rem;
+        }
+
+        .pics-btn {
+            max-width: 90vw;
+            width: min(90vw, 15rem);
+            padding: 0.85rem 1.25rem;
+            font-size: 1rem;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .pics-btn {
+            width: min(95vw, 14rem);
+            padding: 0.8rem 1rem;
+            font-size: 0.95rem;
+        }
     }
     
     .flower {
@@ -993,7 +1055,7 @@ body{
     .flower__grass {
         bottom: 6vmin;
     }
-} */
+}
 
 /* High DPI displays (Retina & similar) */
 @media (min-resolution: 2dppx) {
